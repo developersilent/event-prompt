@@ -19,21 +19,22 @@ interface CountryData {
   language: string;
   flag: string;
   urlPath: string;
+  wiki: string;
 }
 
 export const countries: CountryData[] = [
-  {
-    id: "1",
-    name: "New Zealand",
-    intro:
-      "Discover the natural wonders of New Zealand, from the majestic Southern Alps to the pristine beaches and lush rainforests.",
-    capital: "Wellington",
-    population: "4.9 million",
-    currency: "NZD ",
-    language: "English, Māori",
-    flag: newZealand.src as string,
-    urlPath: "/new-zealand",
-  },
+  // {
+  //   id: "1",
+  //   name: "New Zealand",
+  //   intro:
+  //     "Discover the natural wonders of New Zealand, from the majestic Southern Alps to the pristine beaches and lush rainforests.",
+  //   capital: "Wellington",
+  //   population: "4.9 million",
+  //   currency: "NZD ",
+  //   language: "English, Māori",
+  //   flag: newZealand.src as string,
+  //   urlPath: "/new-zealand",
+  // },
   {
     id: "2",
     name: "France",
@@ -44,7 +45,8 @@ export const countries: CountryData[] = [
     currency: "Euro (EUR)",
     language: "French",
     flag: france.src as string,
-    urlPath: "/france",
+    urlPath: "/France",
+    wiki: "https://en.wikipedia.org/wiki/France",
   },
   {
     id: "3",
@@ -56,7 +58,8 @@ export const countries: CountryData[] = [
     currency: "Japanese Yen",
     language: "Japanese",
     flag: japan.src as string,
-    urlPath: "/japan",
+    urlPath: "/Japan",
+    wiki: "https://en.wikipedia.org/wiki/Japan",
   },
   {
     id: "4",
@@ -68,7 +71,8 @@ export const countries: CountryData[] = [
     currency: "Australian Dollar",
     language: "English",
     flag: australia.src as string,
-    urlPath: "/australia",
+    urlPath: "/Australia",
+    wiki: "https://en.wikipedia.org/wiki/Australia",
   },
   {
     id: "5",
@@ -80,32 +84,33 @@ export const countries: CountryData[] = [
     currency: "Euro (EUR)",
     language: "Italian",
     flag: italy.src as string,
-    urlPath: "/italy",
+    urlPath: "/Italy",
+    wiki: "https://en.wikipedia.org/wiki/Italy",
   },
-  {
-    id: "6",
-    name: "United States",
-    intro:
-      "Explore the diverse landscapes and vibrant cities of the United States, from the Grand Canyon to New York City.",
-    capital: "Washington, D.C.",
-    population: "331 million",
-    currency: "US Dollar (USD)",
-    language: "English",
-    flag: usa.src as string,
-    urlPath: "/united-states",
-  },
-  {
-    id: "7",
-    name: "United Kingdom",
-    intro:
-      "Discover the historic landmarks and scenic countryside of the United Kingdom, from the castles of Scotland to the cliffs of Dover.",
-    capital: "London",
-    population: "67 million",
-    currency: "British Pound",
-    language: "English",
-    flag: uk.src as string,
-    urlPath: "/united-kingdom",
-  },
+  // {
+  //   id: "6",
+  //   name: "United States",
+  //   intro:
+  //     "Explore the diverse landscapes and vibrant cities of the United States, from the Grand Canyon to New York City.",
+  //   capital: "Washington, D.C.",
+  //   population: "331 million",
+  //   currency: "US Dollar (USD)",
+  //   language: "English",
+  //   flag: usa.src as string,
+  //   urlPath: "/United-states",
+  // },
+  // {
+  //   id: "7",
+  //   name: "United Kingdom",
+  //   intro:
+  //     "Discover the historic landmarks and scenic countryside of the United Kingdom, from the castles of Scotland to the cliffs of Dover.",
+  //   capital: "London",
+  //   population: "67 million",
+  //   currency: "British Pound",
+  //   language: "English",
+  //   flag: uk.src as string,
+  //   urlPath: "/United-kingdom",
+  // },
   {
     id: "8",
     name: "China",
@@ -116,7 +121,8 @@ export const countries: CountryData[] = [
     currency: "Chinese Yuan",
     language: "Mandarin",
     flag: china.src as string,
-    urlPath: "/china",
+    urlPath: "/China",
+    wiki: "https://en.wikipedia.org/wiki/China",
   },
   {
     id: "9",
@@ -128,7 +134,8 @@ export const countries: CountryData[] = [
     currency: "INR",
     language: "Hindi, English",
     flag: india.src as string,
-    urlPath: "/india",
+    urlPath: "/India",
+    wiki: "https://en.wikipedia.org/wiki/India",
   },
   {
     id: "10",
@@ -140,6 +147,7 @@ export const countries: CountryData[] = [
     currency: "Euro (EUR)",
     language: "German",
     flag: germany.src as string,
-    urlPath: "/germany",
+    urlPath: "/Germany",
+    wiki: "https://en.wikipedia.org/wiki/Germany",
   },
 ];

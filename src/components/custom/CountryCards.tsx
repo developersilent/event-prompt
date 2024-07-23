@@ -54,7 +54,7 @@ export default function CountryCards() {
                 </div>
                 <div className="flex justify-end pb-5">
                   <Link
-                    href={country.urlPath}
+                    href={country.wiki}
                     className="px-6 py-2 rounded-full text-sm bg-slate-900 text-white  font-medium"
                   >
                     Explore

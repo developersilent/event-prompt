@@ -1,23 +1,17 @@
-import { ChevronRightIcon, GlobeIcon } from "@radix-ui/react-icons";
+import {
+  ChevronRightIcon,
+  GitHubLogoIcon,
+  GlobeIcon,
+} from "@radix-ui/react-icons";
 import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuLink,
-  NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { IconMenu } from "@tabler/icons-react";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@radix-ui/react-collapsible";
-import { countries } from "../../../country-data";
-
 export default function NavigationMenuWeb() {
   return (
     <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -25,7 +19,7 @@ export default function NavigationMenuWeb() {
         className="ml-auto hidden lg:flex"
         orientation="horizontal"
       >
-        <NavigationMenuList>
+        <NavigationMenuList className="gird gap-3">
           <NavigationMenuLink asChild>
             <Link
               href="/"
@@ -37,29 +31,11 @@ export default function NavigationMenuWeb() {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              href="#destinations"
+              href="https://github.com/developersilent/event-prompt"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
               prefetch={false}
             >
-              Destinations
-            </Link>
-          </NavigationMenuLink>
-          <NavigationMenuLink asChild>
-            <Link
-              href="/about"
-              className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-              prefetch={false}
-            >
-              About
-            </Link>
-          </NavigationMenuLink>
-          <NavigationMenuLink asChild>
-            <Link
-              href="/contact"
-              className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-              prefetch={false}
-            >
-              Contact
+              <GitHubLogoIcon className="w-5 h-5" />
             </Link>
           </NavigationMenuLink>
         </NavigationMenuList>
@@ -87,20 +63,6 @@ export default function NavigationMenuWeb() {
             >
               Destinations
             </Link> */}
-            <Link
-              href="/about"
-              className="flex w-full items-center py-2 text-lg font-semibold"
-              prefetch={false}
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="flex w-full items-center py-2 text-lg font-semibold"
-              prefetch={false}
-            >
-              Contact
-            </Link>
           </div>
         </SheetContent>
       </Sheet>
